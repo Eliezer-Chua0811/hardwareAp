@@ -15,7 +15,7 @@
       },
       {
       "name":"Bosch 2608643045 TCT Saw Blade 356mm 6 1/4' x 20T Bore Size 20mm Wood (For GKS66X Use)",
-      "desc":"	1x Bosch 2608643045 TCT Saw Blade 356mm 6 1/4' x 20T Bore Size 20mm Wood (For GKS66X Use)",
+      "desc":"  1x Bosch 2608643045 TCT Saw Blade 356mm 6 1/4' x 20T Bore Size 20mm Wood (For GKS66X Use)",
       "image":"css/img/3rd.jpg",
     },
     {
@@ -25,7 +25,7 @@
   },
   {
   "name":"StarWAR illusion 3D Led night light Visual Home kitchen table Lamp Station - B",
-  "desc":"	1 x StarWAR illusion 3D Led night light Visual Home kitchen table Lamp Station",
+  "desc":"  1 x StarWAR illusion 3D Led night light Visual Home kitchen table Lamp Station",
   "image":"css/img/5th.jpg",
 },
 ];
@@ -53,7 +53,7 @@ this.media=[{
   "alignment":"right-align",
   "button":"btn-large waves-effect waves-light cyan lighten-3 green-text text-darken-3 disabled",
   "button_caption":"Soon to open"
-}		
+}   
 ];
 
 }
@@ -71,7 +71,7 @@ let listHard = document.getElementById("hardInfo");
 let html = ``;
 for(let i=0;i<this.item.length;i++){
 html += `<tr>
-<td><img src="${this.item[i].image}"id="imgre"></td>
+<td><img src="${this.item[i].image}" id="imgre"></td>
 <td class="white-text">${this.item[i].name}</td>
 <td>${this.item[i].desc}</td>
 <td><a class="waves-effect waves-light btn" onclick="component.hardDetailsPage(${i})">More Details</a></td> 
@@ -90,7 +90,7 @@ searchHard(){
       if(this.item[i].name.toLowerCase().includes(txtSearchHard.value)||this.item[i].name.toUpperCase().includes(txtSearchHard.value)||this.item[i].name.includes(txtSearchHard.value)){
         html += `
         <tr>
-         <td><img src="${this.item[i].image} ></td>
+         <td><img src="${this.item[i].image} id="image-preview" ></td>
           <td>${this.item[i].name}</td>
           <td>${this.item[i].desc}</td>
           <td><a class="waves-effect waves-light btn" onclick="component.hardDetailsPage(${i})">More Details</a></td> 
@@ -129,8 +129,8 @@ html += `
     </div>
   </div>
     <div class="row">
-      <div class="col s12 m12 l6">
-        <img src="${this.item[index].image}" id="imgre">
+      <div class="col s12 m12 l6" ">
+        <img src="${this.item[index].image}id="image-preview">
       </div>
       <div class="section" >
         <div class="col s12 m12 l6" id="textBox">
@@ -163,8 +163,8 @@ let html = `
   
   <div class="section">
     <div class="row">
-      <div class="col s12 m12 l6">
-        <img src="${this.item[val].image}"id="imgre">
+      <div class="col s12 m12 l6" id="image-preview">
+        <img src="${this.item[val].image}">
       </div>
     
     <div class="section" >

@@ -1,3 +1,17 @@
+#products{
+  display: none;
+}
+
+#image-preview{
+  position: relative;
+}
+
+#image-preview img{
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
 .container{
   margin-top:20px;
   padding: 0px;
