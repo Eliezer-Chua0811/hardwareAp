@@ -6,12 +6,12 @@ this.item = [
 {
 	"name":"Powerful Cordless: Set of 45 Screw Driver & Drill Head Sets",
 	"desc":"Cordless Screwdriver4x 50mm Screw Head Attachments 2x Drill Attachments 28x Screw Head Attachments 8x Socket Attachments Magnectic Screw Attachment Fixture User Manual Tool Box",
-	"image":"img/first.jpg"
+	"image":"img/first.jpg",
 },
 {
 	"name":"Intel Boxed Core I5-6600K 3.50 GHz, 6 M Processor Cache 6 for LGA 1151 (BX80662I56600K)",
 	"desc":"1x Intel Boxed Core I5-6600K 3.50 GHz, 6 M Processor Cache 6 for LGA 1151 (BX80662I56600K) with Corsair Hydro Series H100i v2 Extreme Performance Liquid CPU Cooler",
-	"image":"img/second.jpg"
+	"image":"img/second.jpg",
 },
 {
 	"name":"Bosch 2608643045 TCT Saw Blade 356mm 6 1/4' x 20T Bore Size 20mm Wood (For GKS66X Use)",
@@ -71,7 +71,7 @@ let listHard = document.getElementById("hardInfo");
 let html = ``;
 for(let i=0;i<this.item.length;i++){
 html += `<tr>
-<td><img src="${this.item[i].image}" id="imgre"></td>
+<td><img src="${this.item[i].image}"></td>
 <td class="white-text">${this.item[i].name}</td>
 <td>${this.item[i].desc}</td>
 <td><a class="waves-effect waves-light btn" onclick="component.hardDetailsPage(${i})">More Details</a></td> 
@@ -129,8 +129,8 @@ html += `
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 m12 l6" ">
-			<img src="${this.item[index].image}id="image-preview">
+		<div class="col s12 m12 l6">
+			<img src="${this.item[index].image} id="image-preview">
 		</div>
 		<div class="section" >
 			<div class="col s12 m12 l6" id="textBox">
@@ -311,7 +311,7 @@ let html = `
 				<table id="hardList" class="responsive-table bordered hoverable light blue">
 					<thead>
 						<tr>
-							<th>Image</th>
+							<th id="image-preview">Image</th>
 							<th>Name</th>
 							<th>Description</th>
 							<th>Action</th>
@@ -397,6 +397,7 @@ let html = `
 	$('#homepage').show();
 	$('#createHardware').hide();
 	$('#modal1').show();
+	$('#image-preview').show();
 }
 
 homePage(){
