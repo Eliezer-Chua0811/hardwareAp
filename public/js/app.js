@@ -90,7 +90,7 @@ for(let i=0;i<this.item.length;i++){
 if(this.item[i].name.toLowerCase().includes(txtSearchHard.value)||this.item[i].name.toUpperCase().includes(txtSearchHard.value)||this.item[i].name.includes(txtSearchHard.value)){
 html += `
 <tr>
-	<td><img src="${this.item[i].image} id="image-preview" ></td>
+	<td><img src="${this.item[i].image}" id="image-preview" ></td>
 	<td>${this.item[i].name}</td>
 	<td>${this.item[i].desc}</td>
 	<td><a class="waves-effect waves-light btn" onclick="component.hardDetailsPage(${i})">More Details</a></td> 
@@ -130,7 +130,7 @@ html += `
 	</div>
 	<div class="row">
 		<div class="col s12 m12 l6">
-			<img src="${this.item[index].image} id="image-preview">
+			<img src="${this.item[index].image}" id="image-preview">
 		</div>
 		<div class="section" >
 			<div class="col s12 m12 l6" id="textBox">
